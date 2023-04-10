@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Video Jukebox</title>
+      <link rel="stylesheet" href="./style.css" />
+   </head>
+   <body>
+      <header>
+         <h1>Video Jukebox</h1>
+      </header>
+      <div class="container">
+         <section class="left">
+            <form id="playlistForm">
+               <label for="songName">Song Name:</label>
+               <input type="text" id="songName" name="songName" />
+
+               <label for="artistName">Artist Name:</label>
+               <input type="text" id="artistName" name="artistName" />
+
+               <label for="youtubeLink">YouTube Link:</label>
+               <input type="text" id="youtubeLink" name="youtubeLink" />
+
+               <button type="submit">Add Song</button>
+            </form>
+
+            <ul id="playlist"></ul>
+         </section>
+         <section class="right">
+            <div id="playerContainer">
+               <iframe
+                  id="player"
+                  width="560"
+                  height="315"
+                  frameborder="0"
+                  src=""
+               ></iframe>
+            </div>
+         </section>
+      </div>
+      <script src="./index.js"></script>
+   </body>
+</html>
