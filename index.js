@@ -47,21 +47,25 @@ function displayPlaylist() {
    playlist.innerHTML = ""
 
    songs.forEach(function (song) {
-      const li = document.createElement("a")
-      li.innerText = `${song.songName} - ${song.artistName}`
-
-      const link = document.createElement("a")
-      link.href = song.youtubeLink
-
-      link.addEventListener("click", function (e) {
-         e.preventDefault()
-         player.src = `https://www.youtube.com/embed/${song.youtubeLink}`
+      const span = document.createElement("span")
+      span.textContent = `${song.songName} - ${song.artistName}`
+      const li = document.createElement("li")
+      const deleteBtn = document.createElement("button")
+      deleteBtn.innerHTML = "🗑️"
+      deleteBtn.addEventListener("click", (e) => {
+         e.stopPropagation()
+         if (confirm("Are you sure you want to remove this song?"))
+            e.target.parentNode.parentNode.remove()
       })
 
-      link.appendChild(li)
-      playlist.appendChild(link)
+      li.addEventListener("click", function () {
+         player.src = `https://www.youtube.com/embed/${song.youtubeLink}`
+      })
+      span.appendChild(deleteBtn)
+      li.appendChild(span)
+      playlist.appendChild(li)
    })
 }
-
+// 🗑️
 // make a delete button
-// change order of link and li
+// make a favorite button
