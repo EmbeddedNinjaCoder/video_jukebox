@@ -13,21 +13,22 @@
       </header>
       <div class="container">
          <section class="left">
-            <form id="playlistForm">
-               <label for="songName">Song Name:</label>
-               <input type="text" id="songName" name="songName" />
+            <form id="playlist-form">
+               <label for="song">Song Name:</label>
+               <input type="text" id="song" name="song" />
 
-               <label for="artistName">Artist Name:</label>
-               <input type="text" id="artistName" name="artistName" />
+               <label for="artist">Artist Name:</label>
+               <input type="text" id="artist" name="artist" />
 
-               <label for="youtubeLink">YouTube Link:</label>
-               <input type="text" id="youtubeLink" name="youtubeLink" />
+               <label for="youtubeID">YouTube Link:</label>
+               <input type="text" id="youtubeID" name="youtubeID" />
 
                <button type="submit">Add Song</button>
             </form>
 
             <ul id="playlist"></ul>
          </section>
+
          <section class="right">
             <div id="playerContainer">
                <iframe
