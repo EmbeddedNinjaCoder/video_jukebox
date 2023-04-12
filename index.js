@@ -2,8 +2,6 @@ const form = document.querySelector("#playlist-form")
 const playlist = document.querySelector("#playlist")
 const player = document.querySelector("#player")
 
-let songs = []
-
 form.addEventListener("submit", function (e) {
    e.preventDefault()
 
