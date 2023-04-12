@@ -26,11 +26,7 @@ form.addEventListener("submit", function (e) {
    const artistName = artistNameInput.value
    const youtubeLink = youtubeLinkInput.value
 
-   const song = {
-      songName,
-      artistName,
-      youtubeLink,
-   }
+   
 
    songs.push(song)
 
