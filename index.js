@@ -1,22 +1,17 @@
-const form = document.querySelector("#playlist-form")
-const playlist = document.querySelector("#playlist")
-const player = document.querySelector("#player")
+const form = ""
+const playlist = ""
+const player = ""
 
-form.addEventListener("submit", function (e) {
-   e.preventDefault()
+form.addEventListener("what kind of event??", function (e) {
+   //  anything special here????
+   const songNameInput = ""
+   const artistNameInput = ""
+   const youtubeIDInput = ""
+   const songName = ""
+   const artistName = ""
+   const youtubeID = 
 
-   const songNameInput = document.querySelector("#song")
-   const artistNameInput = document.querySelector("#artist")
-   const youtubeIDInput = document.querySelector("#youtubeID")
-   const songName = songNameInput.value
-   const artistName = artistNameInput.value
-   const youtubeID = youtubeIDInput.value
-
-   const songObj = {
-      songName,
-      artistName,
-      youtubeID,
-   }
+   //const songObj = {"???"}
 
    displayPlaylist(songObj)
 
@@ -24,9 +19,9 @@ form.addEventListener("submit", function (e) {
 })
 
 function displayPlaylist(songObj) {
-   const span = document.createElement("span")
-   const li = document.createElement("li")
-   const deleteBtn = document.createElement("button")
+   const span = ""
+   const li = ""
+   const deleteBtn = ""
 
    span.textContent = `${songObj.songName} - ${songObj.artistName}   `
    deleteBtn.innerHTML = "🗑️"
@@ -34,19 +29,13 @@ function displayPlaylist(songObj) {
    // add event listeners
 
    li.addEventListener("click", () => {
-      player.src = `https://www.youtube.com/embed/${songObj.youtubeID}`
+      // player.src = `https://www.youtube.com/embed/${songObj.youtubeID}`
    })
 
    deleteBtn.addEventListener("click", (e) => {
-      e.stopPropagation()
-      console.log(e)
-      if (confirm("Are you sure you want to remove this song?"))
-         e.target.parentNode.parentNode.remove()
+     // add code here
    })
 
-   // attach
-   span.appendChild(deleteBtn)
-   li.appendChild(span)
-
-   playlist.appendChild(li)
+   // attach deleteBtn to span, span to li, li to playlist
+   
 }
