@@ -33,6 +33,7 @@ function displayPlaylist(songObj) {
    })
 
    deleteBtn.addEventListener("click", (e) => {
+      console.log("Deleting Song...")
      // add code here
    })
 
