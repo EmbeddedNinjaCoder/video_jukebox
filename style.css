@@ -18,7 +18,7 @@ h1 {
 
 #playlist-form {
    margin: 30px auto;
-   width: 500px;
+   width: 300px;
    padding: 20px;
    background-color: #f2f2f2;
    border-radius: 10px;
@@ -32,7 +32,7 @@ label {
 
 input[type="text"] {
    display: block;
-   width: 95%;
+   width: 90%;
    padding: 10px;
    border: none;
    border-radius: 5px;
