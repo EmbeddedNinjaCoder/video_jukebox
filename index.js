@@ -37,14 +37,13 @@ function displayPlaylist(songObj) {
    })
 
    deleteBtn.addEventListener("click", (e) => {
-      console.log("Deleting Song")
-       console.log("Deleting Song...")
-     //8. Stop the propagation of the click so the li doesn't respond to the delete click
+      console.log("Deleting Song...")
+      //8. Stop the propagation of the click so the li doesn't respond to the delete click
 
       //9. Remove the li, which is the grandparent of the deleteBtn
 
       //Hint:  e.target is the button - use the parentNode property to get to the span, and again to get to the li.  Then use .remove()
-     
+
       //BONUS: use a confirm box to allow the user to change their minds about deleting the song. A confirm box returns true or false depending on what the user selects.  Try using the return value of the confirm box in a conditional, and move the .remove() into the if statement
    })
 
